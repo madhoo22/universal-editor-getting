@@ -1,2 +1,5 @@
 mountpoints:
-  /: https://author-p137117-e1400624.adobeaemcloud.com/bin/franklin.delivery/madhoo22/universal-editor-getting/main
+  /: 
+  url: "https://author-p137117-e1400624.adobeaemcloud.com/bin/franklin.delivery/madhoo22/universal-editor-getting/main"
+  type: "markup"
+  suffix: ".html"
