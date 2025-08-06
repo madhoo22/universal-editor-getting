@@ -4,16 +4,19 @@
   padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  grid: 24px;
+  gap: 24px; /* Spacing between grid items */
 }
 
 .cards > ul > li {
   border: 1px solid #dadada;
   background-color: var(--background-color);
+  overflow: hidden;
+  border-radius: 4px; /* Optional: adds slight rounding for better UI */
+  transition: box-shadow 0.3s ease;
 }
 
-.cards .cards-card-body {
-  margin: 16px;
+.cards > ul > li:hover {
+  box-shadow: 0 4px 12px rgb(0 0 0 / 10%); /* Optional: subtle hover effect */
 }
 
 .cards .cards-card-image {
@@ -24,4 +27,12 @@
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+  display: block;
+}
+
+.cards .cards-card-body {
+  margin: 16px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
 }
